@@ -380,7 +380,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt32 - false;
+			cellPRXInt32 = false;
 		}
 		
 		// Check Title Text Part 2
@@ -391,7 +391,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16a - false;
+			cellPRXInt16a = false;
 		}
 		
 		// Check Title Text Part 3
@@ -402,7 +402,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16b - false;
+			cellPRXInt16b = false;
 		}
 		
 		// Check Title Text Part 4
@@ -413,7 +413,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16c - false;
+			cellPRXInt16c = false;
 		}
 		
 		// Check Title Text Part 5
@@ -424,7 +424,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16d - false;
+			cellPRXInt16d = false;
 		}
 		
 		// Check Title Text Part 6
@@ -435,7 +435,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16e - false;
+			cellPRXInt16e = false;
 		}
 		
 		// Check Title Text Part 7
@@ -446,7 +446,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16f - false;
+			cellPRXInt16f = false;
 		}
 		
 		// Check Title Text Part 8
@@ -457,7 +457,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16g - false;
+			cellPRXInt16g = false;
 		}
 		
 		// Check Title Text Part 9
@@ -468,7 +468,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16h - false;
+			cellPRXInt16h = false;
 		}
 
 
@@ -481,7 +481,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt64 - false;
+			cellPRXInt64 = false;
 		}
 
 		// Check Demo Evaluation Text Line 2 1st Half
@@ -492,7 +492,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXUint64 - false;
+			cellPRXUint64 = false;
 		}
 
 		// Check Demo Evaluation Text Line 2 2nd Half
@@ -503,7 +503,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXUint128 - false;
+			cellPRXUint128 = false;
 		}
 		
 		// Check Demo Evaluation Text Line 3
@@ -514,7 +514,7 @@ namespace cellFSWriteInt_
 		
 		else
 		{
-			cellPRXUint32 - false;
+			cellPRXUint32 = false;
 		}
 		
 		// Check Startup Splash Text Line 1
@@ -525,7 +525,7 @@ namespace cellFSWriteInt_
 		
 		else
 		{
-			cellPRXUint256 - false;
+			cellPRXUint256 = false;
 		}
 
 		// Check Help -> About Text
@@ -536,7 +536,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXUint512 - false;
+			cellPRXUint512 = false;
 		}
 		
 		/*
@@ -548,7 +548,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt8 - false;
+			cellPRXInt8 = false;
 		}
 		*/
 
@@ -572,7 +572,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt16 - false;
+			cellPRXInt16 = false;
 		}
 
 		
@@ -585,7 +585,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt4 - false;
+			cellPRXInt4 = false;
 		}
 	}
 	//----------------------------------------------------------------------------
