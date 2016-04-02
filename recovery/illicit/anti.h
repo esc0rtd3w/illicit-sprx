@@ -145,7 +145,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt32 - false;
+			cellPRXInt32  = false;
 		}
 		
 		// Check Startup Splash Text Line 1
@@ -156,7 +156,7 @@ namespace cellFSWriteInt_
 		
 		else
 		{
-			cellPRXUint256 - false;
+			cellPRXUint256  = false;
 		}
 
 		// Check Credits Splash
@@ -176,7 +176,7 @@ namespace cellFSWriteInt_
 
 		else
 		{
-			cellPRXInt4 - false;
+			cellPRXInt4  = false;
 		}
 	}
 	//----------------------------------------------------------------------------
