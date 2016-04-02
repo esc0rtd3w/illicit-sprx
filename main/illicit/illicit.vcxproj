@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|PS3">
+      <Configuration>Debug</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PS3">
+      <Configuration>Release</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E5D1CE95-40CB-4655-A70E-729755F634CB}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <TargetName>iLLiCiT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;__CELL_ASSERT__;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <OptimizationLevel>Levels</OptimizationLevel>
+      <CharUnsigned>false</CharUnsigned>
+      <NoStdInc>false</NoStdInc>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SCE_PS3_ROOT)\target\ppu\lib\libc.a;$(SCE_PS3_ROOT)\target\ppu\lib\libc_stub.a;$(SN_PS3_PATH)\ppu\lib\sn\libsn.a;$(SCE_PS3_ROOT)\target\ppu\lib\libm.a;$(SCE_PS3_ROOT)\target\ppu\lib\libio_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libsysutil_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libsysmodule_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libsyscall.a;$(SCE_PS3_ROOT)\target\ppu\lib\libstdc++_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\fno-exceptions\libstdc++_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\fno-exceptions\fno-rtti\libstdc++_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libgcm_sys_stub.a;%(AdditionalDependencies);$(SCE_PS3_ROOT)\target\ppu\lib\libhttp_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libhttp_util_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libnet_stub.a</AdditionalDependencies>
+      <InfoStripping>StripSymsAndDebug</InfoStripping>
+      <DataStripping>None</DataStripping>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="anti.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="messages.cpp" />
+    <ClCompile Include="printf.cpp" />
+    <ClCompile Include="prx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="addresses.h" />
+    <ClInclude Include="animations.h" />
+    <ClInclude Include="anti.h" />
+    <ClInclude Include="buttons.h" />
+    <ClInclude Include="cell.h" />
+    <ClInclude Include="colors.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="core.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="effects.h" />
+    <ClInclude Include="empty.h" />
+    <ClInclude Include="functions.h" />
+    <ClInclude Include="hashes.h" />
+    <ClInclude Include="help.h" />
+    <ClInclude Include="hook.h" />
+    <ClInclude Include="hud.h" />
+    <ClInclude Include="hud_game.h" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="keyboard.h" />
+    <ClInclude Include="licensing.h" />
+    <ClInclude Include="lobby.h" />
+    <ClInclude Include="loops.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="messages.h" />
+    <ClInclude Include="misc.h" />
+    <ClInclude Include="misc_game.h" />
+    <ClInclude Include="missions.h" />
+    <ClInclude Include="models.h" />
+    <ClInclude Include="natives.h" />
+    <ClInclude Include="network.h" />
+    <ClInclude Include="objects.h" />
+    <ClInclude Include="particlefx.h" />
+    <ClInclude Include="peds.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="presets.h" />
+    <ClInclude Include="printf.h" />
+    <ClInclude Include="props.h" />
+    <ClInclude Include="protection.h" />
+    <ClInclude Include="prx.h" />
+    <ClInclude Include="rpc.h" />
+    <ClInclude Include="sounds.h" />
+    <ClInclude Include="system.h" />
+    <ClInclude Include="teleport.h" />
+    <ClInclude Include="textures.h" />
+    <ClInclude Include="timecycle.h" />
+    <ClInclude Include="tuneables.h" />
+    <ClInclude Include="tweak.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="vehicles.h" />
+    <ClInclude Include="weapons.h" />
+    <ClInclude Include="weather.h" />
+    <ClInclude Include="web.h" />
+    <ClInclude Include="world.h" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

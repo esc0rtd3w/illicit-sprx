@@ -1,0 +1,174 @@
+
+
+
+[ COOL LOGO HERE ]
+
+
+iLLiCiT GTA:V SPRX Menu
+
+
+esc0rtd3w / 2015
+
+
+-----------------------------------------
+Platform: Playstation 3
+
+Type: Mod Menu
+
+Format: SPRX
+
+Target Game: Grand Theft Auto 5
+
+Disc ID: BLES01807
+
+Region: Europe
+-----------------------------------------
+
+
+
+
+Menu Layout
+
+OK = Works As Intended
+BAD = Does Not Work
+NR = Not Ready or Not Yet Available
+FTR = Future or Not Shown in Menu
+
+
+
+[Self Mods]
+	[Change Name]
+		Input Custom <-- NR
+		Random <-- NR
+		Clone From Lobby <-- NR
+		Default PSN <-- NR
+		iLLiCiT <-- OK
+		ALL EMPTY SPACES <-- OK
+		**Invalid** <-- OK
+		Rockstar <-- OK
+		Rockstar Games <-- OK
+		Rockstar North <-- OK
+		Sony Moderator <-- OK
+	
+	[Change Model]
+		Input Custom <-- NR
+		Clone Another Player <-- NR
+		[Animals]
+			Boar <-- OK
+			Chickenhawk <-- OK
+			Chimp <-- OK
+			Chop <-- BAD (Freezes)
+			Cormorant <-- OK
+			Coyote <-- OK
+			Crow <-- OK
+			Deer <-- OK
+			Fish <-- OK (Dies Instantly)
+			Hen <-- OK
+			Husky <-- OK
+			Mountain Lion <-- BAD (Freezes)
+			Pig <-- OK
+			Pigeon <-- OK
+			Rat <-- OK
+			Retriever <-- BAD (Freezes)
+			Rhesus Monkey <-- OK
+			Rottweiler <-- BAD (Freezes)
+			Seagull <-- OK
+			Shark <-- BAD (Freezes)
+			Shepherd <-- BAD (Freezes)
+			
+		[Story Mode Characters] <-- NR
+		
+		[Male Peds] <-- NR
+		
+		[Female Peds] <-- NR
+		
+		[Police & Emergency]
+		
+		[Strippers & Hookers]
+		
+		[Glitch Characters] <-- NR
+	
+	[Change Outfit] <-- NR
+		Input Custom <-- NR
+		Police Officer <-- NR
+		Fireman <-- NR
+	
+	[Animations] <-- NR
+	
+	[Toggles] <-- OK
+	
+	[Items] <-- BAD (Some May Work Online)
+	
+	[Multipliers] <-- NR
+	
+	[Camera Options] <-- NR
+	
+	[Time Cycle Modifier] <-- OK (All Sub Items Work)
+	
+	[Mobile Phone] <-- OK (All Sub Items Work)
+	
+	[Developer T-Shirts] <-- NR
+	
+	Clone Player <-- BAD
+	
+	Apply Damage <-- OK
+	
+	Explode <-- OK
+	
+	Explode Custom <-- OK
+	
+	
+[Players] <-- NR (Most Options Only Work For Player 0)
+
+
+[Lobby] <-- NR (Most Options Only Work For Player 0)
+
+
+[Teleport]
+
+
+[Weapons]
+
+
+[Vehicles]
+
+
+[Objects]
+
+
+[Peds]
+
+
+[Weather]
+
+
+[Recovery]
+
+
+[Protection]
+
+
+[Misc]
+
+
+[Help]
+	Toggle Help Context <-- NR
+	Using Menus <-- NR
+	Customization <-- NR
+	Credits <-- OK
+	About <-- OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

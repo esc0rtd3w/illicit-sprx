@@ -1,0 +1,1053 @@
+#ifndef __TIMECYCLE_H
+#define __TIMECYCLE_H
+
+
+
+namespace TimeCycle
+{
+
+	enum TimeCycleStyle
+	{
+
+		BlackOut,
+		CAMERA_BW,
+		CAMERA_secuirity_FUZZ,
+		CHOP,
+		cinema_001,
+		CopsSPLASH,
+		crane_cam,
+		damage,
+		death,
+		Dont_tazeme_bro,
+		drug_drive_blend01,
+		Drug_deadman,
+		drug_flying_base,
+		drug_wobbly,
+		Drunk,
+		dying,
+		eyeINtheSKY,
+		DRUG_gas_huffin,
+		prologue_ending_fog,
+		prologue_shootout,
+		Prologue_shootout_opt,
+		secret_camera,
+		sunglasses,
+		telescope,
+		traffic_skycam,
+		ufo,
+		ufo_deathray,
+		underwater_deep,
+
+
+		/*
+		Bank_HLWD,
+		Barry1_Stoned,
+		BarryFadeOut,
+		baseTONEMAPPING,
+		Bikers,
+		BikersSPLASH,
+		blackNwhite,
+		BlackOut,
+		Bloom,
+		BloomLight,
+		buildingTOP,
+		BulletTimeDark,
+		BulletTimeLight,
+		CAMERA_BW,
+		CAMERA_secuirity,
+		CAMERA_secuirity_FUZZ,
+		canyon_mission,
+		carMOD_underpass,
+		carpark,
+		carpark_dt1_02,
+		carpark_dt1_03,
+		cashdepot,
+		cashdepotEMERGENCY,
+		cBank_back,
+		cBank_front,
+		ch2_tunnel_whitelight,
+		CH3_06_water,
+		CHOP,
+		cinema,
+		cinema_001,
+		cops,
+		CopsSPLASH,
+		crane_cam,
+		crane_cam_cinematic,
+		CS1_railwayB_tunnel,
+		CS3_rail_tunnel,
+		CUSTOM_streetlight,
+		damage,
+		death,
+		DEFAULT,
+		DefaultColorCode,
+		DONT_overide_sunpos,
+		Dont_tazeme_bro,
+		dont_tazeme_bro_b,
+		downtown_FIB_cascades_opt,
+		DrivingFocusDark,
+		DrivingFocusLight,
+		DRUG_2_drive,
+		Drug_deadman,
+		Drug_deadman_blend,
+		drug_drive_blend01,
+		drug_drive_blend02,
+		drug_flying_01,
+		drug_flying_02,
+		drug_flying_base,
+		DRUG_gas_huffin,
+		drug_wobbly,
+		Drunk,
+		dying,
+		eatra_bouncelight_beach,
+		epsilion,
+		exile1_exit,
+		exile1_plane,
+		ExplosionJosh,
+		ext_int_extlight_large,
+		EXTRA_bouncelight,
+		eyeINtheSKY,
+		Facebook_NEW,
+		facebook_serveroom,
+		FIB_5,
+		FIB_6,
+		FIB_A,
+		FIB_B,
+		FIB_interview,
+		FIB_interview_optimise,
+		FinaleBank,
+		FinaleBankexit,
+		FinaleBankMid,
+		fireDEPT,
+		FORdoron_delete,
+		Forest,
+		FrankilinsHOUSEhills,
+		frankilnsAUNTS_new,
+		frankilnsAUNTS_SUNdir,
+		FRANKLIN,
+		FranklinColorCode,
+		FranklinColorCodeBasic,
+		FullAmbientmult_interior,
+		gallery_refmod,
+		garage,
+		gorge_reflection_gpu,
+		gorge_reflectionoffset,
+		gorge_reflectionoffset2,
+		graveyard_shootout,
+		gunclub,
+		gunclubrange,
+		gunshop,
+		gunstore,
+		half_direct,
+		hangar_lightsmod,
+		Hanger_INTmods,
+		heathaze,
+		helicamfirst,
+		Hicksbar,
+		HicksbarNEW,
+		hillstunnel,
+		Hint_cam,
+		hitped,
+		hud_def_blur,
+		hud_def_colorgrade,
+		hud_def_desat_cold,
+		hud_def_desat_cold_kill,
+		hud_def_desat_Franklin,
+		hud_def_desat_Michael,
+		hud_def_desat_Neutral,
+		hud_def_desat_switch,
+		hud_def_desat_Trevor,
+		hud_def_desatcrunch,
+		hud_def_flash,
+		hud_def_focus,
+		hud_def_Franklin,
+		hud_def_lensdistortion,
+		hud_def_Michael,
+		hud_def_Trevor,
+		id1_11_tunnel,
+		int_amb_mult_large,
+		int_Barber1,
+		int_carmod_small,
+		int_carshowroom,
+		int_chopshop,
+		int_clean_extlight_large,
+		int_clean_extlight_none,
+		int_clean_extlight_small,
+		int_ClothesHi,
+		int_clotheslow_large,
+		int_cluckinfactory_none,
+		int_cluckinfactory_small,
+		int_ControlTower_none,
+		int_ControlTower_small,
+		int_dockcontrol_small,
+		int_extlght_sm_cntrst,
+		int_extlight_large,
+		int_extlight_large_fog,
+		int_extlight_none,
+		int_extlight_none_dark,
+		int_extlight_none_dark_fog,
+		int_extlight_none_fog,
+		int_extlight_small,
+		int_extlight_small_clipped,
+		int_extlight_small_fog,
+		int_Farmhouse_none,
+		int_Farmhouse_small,
+		int_FranklinAunt_small,
+		INT_FullAmbientmult,
+		INT_FULLAmbientmult_art,
+		INT_FULLAmbientmult_both,
+		INT_garage,
+		int_GasStation,
+		int_hanger_none,
+		int_hanger_small,
+		int_Hospital2_DM,
+		int_Hospital_Blue,
+		int_Hospital_BlueB,
+		int_Hospital_DM,
+		int_lesters,
+		int_Lost_none,
+		int_Lost_small,
+		int_methlab_small,
+		int_motelroom,
+		INT_NO_fogALPHA,
+		INT_NoAmbientmult,
+		INT_NoAmbientmult_art,
+		INT_NoAmbientmult_both,
+		INT_NOdirectLight,
+		INT_nowaterREF,
+		int_office_Lobby,
+		int_office_LobbyHall,
+		INT_posh_hairdresser,
+		INT_streetlighting,
+		int_tattoo,
+		int_tattoo_B,
+		int_tunnel_none_dark,
+		interior_WATER_lighting,
+		introblue,
+		jewel_gas,
+		jewel_optim,
+		jewelry_entrance,
+		jewelry_entrance_INT,
+		jewelry_entrance_INT_fog,
+		KT_underpass,
+		lab_none,
+		lab_none_dark,
+		lab_none_dark_fog,
+		lab_none_exit,
+		LifeInvaderLOD,
+		lightning,
+		lightning_cloud,
+		lightning_strong,
+		lightning_weak,
+		LightPollutionHills,
+		lightpolution,
+		LIGHTSreduceFALLOFF,
+		LODmult_global_reduce,
+		LODmult_global_reduce_NOHD,
+		LODmult_HD_orphan_LOD_reduce,
+		LODmult_HD_orphan_reduce,
+		LODmult_LOD_reduce,
+		LODmult_SLOD1_reduce,
+		LODmult_SLOD2_reduce,
+		LODmult_SLOD3_reduce,
+		metro,
+		METRO_platform,
+		METRO_Tunnels,
+		METRO_Tunnels_entrance,
+		MichaelColorCode,
+		MichaelColorCodeBasic,
+		MichaelsDarkroom,
+		MichaelsDirectional,
+		MichaelsNODirectional,
+		micheal,
+		micheals_lightsOFF,
+		michealspliff,
+		michealspliff_blend,
+		michealspliff_blend02,
+		militarybase_nightlight,
+		//morebloomnumMods,
+		morgue_dark,
+		Mp_apart_mid,
+		MP_Bull_tost,
+		MP_Bull_tost_blend,
+		MP_corona_switch,
+		MP_death_grade,
+		MP_death_grade_blend01,
+		MP_death_grade_blend02,
+		MP_Garage_L,
+		MP_heli_cam,
+		MP_intro_logo,
+		MP_job_load,
+		MP_job_lose,
+		MP_job_win,
+		MP_Killstreak,
+		MP_Killstreak_blend,
+		MP_Loser,
+		MP_Loser_blend,
+		MP_lowgarage,
+		MP_MedGarage,
+		MP_Powerplay,
+		MP_Powerplay_blend,
+		MP_race_finish,
+		MP_select,
+		MP_Studio_Lo,
+		MPApartHigh,
+		Multipayer_spectatorCam,
+		multiplayer_ped_fight,
+		nervousRON_fog,
+		NeutralColorCode,
+		NeutralColorCodeBasic,
+		NeutralColorCodeLight,
+		NEW_abattoir,
+		new_bank,
+		NEW_jewel,
+		NEW_jewel_EXIT,
+		NEW_lesters,
+		NEW_ornate_bank,
+		NEW_ornate_bank_entrance,
+		NEW_ornate_bank_office,
+		NEW_ornate_bank_safe,
+		New_sewers,
+		NEW_shrinksOffice,
+		NEW_station_unfinished,
+		new_stripper_changing,
+		NEW_trevorstrailer,
+		NEW_tunnels,
+		NEW_tunnels_ditch,
+		new_tunnels_entrance,
+		NEW_tunnels_hole,
+		NEW_yellowtunnels,
+		NewMicheal,
+		NewMicheal_night,
+		NewMicheal_upstairs,
+		NewMichealgirly,
+		NewMichealstoilet,
+		NewMichealupstairs,
+		NewMod,
+		nextgen,
+		NO_coronas,
+		NO_fog_alpha,
+		NO_streetAmbient,
+		NO_weather,
+		NoAmbientmult,
+		NoAmbientmult_interior,
+		NOdirectLight,
+		NOrain,
+		overwater,
+		Paleto,
+		paleto_nightlight,
+		paleto_opt,
+		PERSHING_water_reflect,
+		phone_cam,
+		phone_cam1,
+		phone_cam10,
+		phone_cam11,
+		phone_cam12,
+		phone_cam13,
+		phone_cam2,
+		phone_cam3,
+		phone_cam4,
+		phone_cam5,
+		phone_cam6,
+		phone_cam7,
+		phone_cam9,
+		plane_inside_mode,
+		player_transition,
+		player_transition_no_scanlines,
+		player_transition_scanlines,
+		PlayerSwitchNeutralFlash,
+		PlayerSwitchPulse,
+		PoliceStation,
+		PoliceStationDark,
+		polluted,
+		poolsidewaterreflection2,
+		PORT_heist_underwater,
+		powerplant_nightlight,
+		powerstation,
+		prison_nightlight,
+		projector,
+		prologue,
+		prologue_ending_fog,
+		prologue_ext_art_amb,
+		prologue_reflection_opt,
+		prologue_shootout,
+		Prologue_shootout_opt,
+		pulse,
+		RaceTurboDark,
+		RaceTurboFlash,
+		RaceTurboLight,
+		ranch,
+		REDMIST,
+		REDMIST_blend,
+		ReduceDrawDistance,
+		ReduceDrawDistanceMAP,
+		ReduceDrawDistanceMission,
+		reducelightingcost,
+		ReduceSSAO,
+		reducewaterREF,
+		refit,
+		reflection_correct_ambient,
+		RemoteSniper,
+		resvoire_reflection,
+		SALTONSEA,
+		sandyshore_nightlight,
+		SAWMILL,
+		scanline_cam,
+		scanline_cam_cheap,
+		scope_zoom_in,
+		scope_zoom_out,
+		secret_camera,
+		services_nightlight,
+		shades_pink,
+		shades_yellow,
+		SheriffStation,
+		ship_explosion_underwater,
+		ship_lighting,
+		Shop247,
+		Shop247_none,
+		sleeping,
+		//SnipernumMods,
+		SP1_03_drawDistance,
+		spectator1,
+		spectator10,
+		spectator2,
+		spectator3,
+		spectator4,
+		spectator5,
+		spectator6,
+		spectator7,
+		spectator8,
+		spectator9,
+		StadLobby,
+		stc_coroners,
+		stc_deviant_bedroom,
+		stc_deviant_lounge,
+		stc_franklinsHouse,
+		stc_trevors,
+		stoned,
+		stoned_aliens,
+		stoned_cutscene,
+		stoned_monkeys,
+		StreetLightingJunction,
+		StreetLightingtraffic,
+		STRIP_changing,
+		STRIP_nofog,
+		STRIP_office,
+		STRIP_stage,
+		subBASE_water_ref,
+		sunglasses,
+		superDARK,
+		switch_cam_1,
+		switch_cam_2,
+		telescope,
+		torpedo,
+		traffic_skycam,
+		trailer_explosion_optimise,
+		TREVOR,
+		TrevorColorCode,
+		TrevorColorCodeBasic,
+		Trevors_room,
+		trevorspliff,
+		trevorspliff_blend,
+		trevorspliff_blend02,
+		Tunnel,
+		tunnel_entrance,
+		tunnel_entrance_INT,
+		TUNNEL_green,
+		Tunnel_green1,
+		TUNNEL_green_ext,
+		TUNNEL_orange,
+		TUNNEL_orange_exterior,
+		TUNNEL_white,
+		TUNNEL_yellow,
+		TUNNEL_yellow_ext,
+		ufo,
+		ufo_deathray,
+		underwater,
+		underwater_deep,
+		underwater_deep_clear,
+		v_abattoir,
+		V_Abattoir_Cold,
+		v_bahama,
+		v_cashdepot,
+		V_FIB_IT3,
+		V_FIB_IT3_alt,
+		V_FIB_IT3_alt5,
+		V_FIB_stairs,
+		v_foundry,
+		v_janitor,
+		v_jewel2,
+		v_metro,
+		V_Metro2,
+		V_Metro_station,
+		v_michael,
+		v_michael_lounge,
+		V_Office_smoke,
+		V_Office_smoke_ext,
+		V_Office_smoke_Fire,
+		v_recycle,
+		V_recycle_dark,
+		V_recycle_light,
+		V_recycle_mainroom,
+		v_rockclub,
+		V_Solomons,
+		v_strip3,
+		V_strip_nofog,
+		V_strip_office,
+		v_strpchangerm,
+		v_sweat,
+		v_sweat_entrance,
+		v_sweat_NoDirLight,
+		v_torture,
+		Vagos,
+		vagos_extlight_small,
+		VAGOS_new_garage,
+		VAGOS_new_hangout,
+		VagosSPLASH,
+		VC_tunnel_entrance,
+		venice_canal_tunnel,
+		vespucci_garage,
+		warehouse,
+		WATER_hills,
+		WATER_lab,
+		WATER_lab_cooling,
+		WATER_militaryPOOP,
+		WATER_muddy,
+		WATER_port,
+		WATER_REF_malibu,
+		WATER_refmap_high,
+		WATER_refmap_hollywoodlake,
+		WATER_refmap_low,
+		WATER_refmap_med,
+		WATER_refmap_off,
+		WATER_refmap_poolside,
+		WATER_refmap_silverlake,
+		WATER_refmap_venice,
+		WATER_refmap_verylow,
+		WATER_resevoir,
+		WATER_river,
+		WATER_salton,
+		WATER_salton_bottom,
+		WATER_shore,
+		WATER_silty,
+		WATER_silverlake,
+		whitenightlighting,
+		WhiteOut,
+		yell_tunnel_nodirect,
+		*/
+	};
+
+};
+
+
+
+
+
+#endif
+
+
+
+
+
+/*
+
+// Timecycle List
+
+Bank_HLWD
+Barry1_Stoned
+BarryFadeOut
+baseTONEMAPPING
+Bikers
+BikersSPLASH
+blackNwhite
+BlackOut
+Bloom
+BloomLight
+buildingTOP
+BulletTimeDark
+BulletTimeLight
+CAMERA_BW
+CAMERA_secuirity
+CAMERA_secuirity_FUZZ
+canyon_mission
+carMOD_underpass
+carpark
+carpark_dt1_02
+carpark_dt1_03
+cashdepot
+cashdepotEMERGENCY
+cBank_back
+cBank_front
+ch2_tunnel_whitelight
+CH3_06_water
+CHOP
+cinema
+cinema_001
+cops
+CopsSPLASH
+crane_cam
+crane_cam_cinematic
+CS1_railwayB_tunnel
+CS3_rail_tunnel
+CUSTOM_streetlight
+damage
+death
+DEFAULT
+DefaultColorCode
+DONT_overide_sunpos
+Dont_tazeme_bro
+dont_tazeme_bro_b
+downtown_FIB_cascades_opt
+DrivingFocusDark
+DrivingFocusLight
+DRUG_2_drive
+Drug_deadman
+Drug_deadman_blend
+drug_drive_blend01
+drug_drive_blend02
+drug_flying_01
+drug_flying_02
+drug_flying_base
+DRUG_gas_huffin
+drug_wobbly
+Drunk
+dying
+eatra_bouncelight_beach
+epsilion
+exile1_exit
+exile1_plane
+ExplosionJosh
+ext_int_extlight_large
+EXTRA_bouncelight
+eyeINtheSKY
+Facebook_NEW
+facebook_serveroom
+FIB_5
+FIB_6
+FIB_A
+FIB_B
+FIB_interview
+FIB_interview_optimise
+FinaleBank
+FinaleBankexit
+FinaleBankMid
+fireDEPT
+FORdoron_delete
+Forest
+FrankilinsHOUSEhills
+frankilnsAUNTS_new
+frankilnsAUNTS_SUNdir
+FRANKLIN
+FranklinColorCode
+FranklinColorCodeBasic
+FullAmbientmult_interior
+gallery_refmod
+garage
+gorge_reflection_gpu
+gorge_reflectionoffset
+gorge_reflectionoffset2
+graveyard_shootout
+gunclub
+gunclubrange
+gunshop
+gunstore
+half_direct
+hangar_lightsmod
+Hanger_INTmods
+heathaze
+helicamfirst
+Hicksbar
+HicksbarNEW
+hillstunnel
+Hint_cam
+hitped
+hud_def_blur
+hud_def_colorgrade
+hud_def_desat_cold
+hud_def_desat_cold_kill
+hud_def_desat_Franklin
+hud_def_desat_Michael
+hud_def_desat_Neutral
+hud_def_desat_switch
+hud_def_desat_Trevor
+hud_def_desatcrunch
+hud_def_flash
+hud_def_focus
+hud_def_Franklin
+hud_def_lensdistortion
+hud_def_Michael
+hud_def_Trevor
+id1_11_tunnel
+int_amb_mult_large
+int_Barber1
+int_carmod_small
+int_carshowroom
+int_chopshop
+int_clean_extlight_large
+int_clean_extlight_none
+int_clean_extlight_small
+int_ClothesHi
+int_clotheslow_large
+int_cluckinfactory_none
+int_cluckinfactory_small
+int_ControlTower_none
+int_ControlTower_small
+int_dockcontrol_small
+int_extlght_sm_cntrst
+int_extlight_large
+int_extlight_large_fog
+int_extlight_none
+int_extlight_none_dark
+int_extlight_none_dark_fog
+int_extlight_none_fog
+int_extlight_small
+int_extlight_small_clipped
+int_extlight_small_fog
+int_Farmhouse_none
+int_Farmhouse_small
+int_FranklinAunt_small
+INT_FullAmbientmult
+INT_FULLAmbientmult_art
+INT_FULLAmbientmult_both
+INT_garage
+int_GasStation
+int_hanger_none
+int_hanger_small
+int_Hospital2_DM
+int_Hospital_Blue
+int_Hospital_BlueB
+int_Hospital_DM
+int_lesters
+int_Lost_none
+int_Lost_small
+int_methlab_small
+int_motelroom
+INT_NO_fogALPHA
+INT_NoAmbientmult
+INT_NoAmbientmult_art
+INT_NoAmbientmult_both
+INT_NOdirectLight
+INT_nowaterREF
+int_office_Lobby
+int_office_LobbyHall
+INT_posh_hairdresser
+INT_streetlighting
+int_tattoo
+int_tattoo_B
+int_tunnel_none_dark
+interior_WATER_lighting
+introblue
+jewel_gas
+jewel_optim
+jewelry_entrance
+jewelry_entrance_INT
+jewelry_entrance_INT_fog
+KT_underpass
+lab_none
+lab_none_dark
+lab_none_dark_fog
+lab_none_exit
+LifeInvaderLOD
+lightning
+lightning_cloud
+lightning_strong
+lightning_weak
+LightPollutionHills
+lightpolution
+LIGHTSreduceFALLOFF
+LODmult_global_reduce
+LODmult_global_reduce_NOHD
+LODmult_HD_orphan_LOD_reduce
+LODmult_HD_orphan_reduce
+LODmult_LOD_reduce
+LODmult_SLOD1_reduce
+LODmult_SLOD2_reduce
+LODmult_SLOD3_reduce
+metro
+METRO_platform
+METRO_Tunnels
+METRO_Tunnels_entrance
+MichaelColorCode
+MichaelColorCodeBasic
+MichaelsDarkroom
+MichaelsDirectional
+MichaelsNODirectional
+micheal
+micheals_lightsOFF
+michealspliff
+michealspliff_blend
+michealspliff_blend02
+militarybase_nightlight
+morebloomnumMods=3
+morgue_dark
+Mp_apart_mid
+MP_Bull_tost
+MP_Bull_tost_blend
+MP_corona_switch
+MP_death_grade
+MP_death_grade_blend01
+MP_death_grade_blend02
+MP_Garage_L
+MP_heli_cam
+MP_intro_logo
+MP_job_load
+MP_job_lose
+MP_job_win
+MP_Killstreak
+MP_Killstreak_blend
+MP_Loser
+MP_Loser_blend
+MP_lowgarage
+MP_MedGarage
+MP_Powerplay
+MP_Powerplay_blend
+MP_race_finish
+MP_select
+MP_Studio_Lo
+MPApartHigh
+Multipayer_spectatorCam
+multiplayer_ped_fight
+nervousRON_fog
+NeutralColorCode
+NeutralColorCodeBasic
+NeutralColorCodeLight
+NEW_abattoir
+new_bank
+NEW_jewel
+NEW_jewel_EXIT
+NEW_lesters
+NEW_ornate_bank
+NEW_ornate_bank_entrance
+NEW_ornate_bank_office
+NEW_ornate_bank_safe
+New_sewers
+NEW_shrinksOffice
+NEW_station_unfinished
+new_stripper_changing
+NEW_trevorstrailer
+NEW_tunnels
+NEW_tunnels_ditch
+new_tunnels_entrance
+NEW_tunnels_hole
+NEW_yellowtunnels
+NewMicheal
+NewMicheal_night
+NewMicheal_upstairs
+NewMichealgirly
+NewMichealstoilet
+NewMichealupstairs
+NewMod
+nextgen
+NO_coronas
+NO_fog_alpha
+NO_streetAmbient
+NO_weather
+NoAmbientmult
+NoAmbientmult_interior
+NOdirectLight
+NOrain
+overwater
+Paleto
+paleto_nightlight
+paleto_opt
+PERSHING_water_reflect
+phone_cam
+phone_cam1
+phone_cam10
+phone_cam11
+phone_cam12
+phone_cam13
+phone_cam2
+phone_cam3
+phone_cam4
+phone_cam5
+phone_cam6
+phone_cam7
+phone_cam9
+plane_inside_mode
+player_transition
+player_transition_no_scanlines
+player_transition_scanlines
+PlayerSwitchNeutralFlash
+PlayerSwitchPulse
+PoliceStation
+PoliceStationDark
+polluted
+poolsidewaterreflection2
+PORT_heist_underwater
+powerplant_nightlight
+powerstation
+prison_nightlight
+projector
+prologue
+prologue_ending_fog
+prologue_ext_art_amb
+prologue_reflection_opt
+prologue_shootout
+Prologue_shootout_opt
+pulse
+RaceTurboDark
+RaceTurboFlash
+RaceTurboLight
+ranch
+REDMIST
+REDMIST_blend
+ReduceDrawDistance
+ReduceDrawDistanceMAP
+ReduceDrawDistanceMission
+reducelightingcost
+ReduceSSAO
+reducewaterREF
+refit
+reflection_correct_ambient
+RemoteSniper
+resvoire_reflection
+SALTONSEA
+sandyshore_nightlight
+SAWMILL
+scanline_cam
+scanline_cam_cheap
+scope_zoom_in
+scope_zoom_out
+secret_camera
+services_nightlight
+shades_pink
+shades_yellow
+SheriffStation
+ship_explosion_underwater
+ship_lighting
+Shop247
+Shop247_none
+sleeping
+SnipernumMods=7
+SP1_03_drawDistance
+spectator1
+spectator10
+spectator2
+spectator3
+spectator4
+spectator5
+spectator6
+spectator7
+spectator8
+spectator9
+StadLobby
+stc_coroners
+stc_deviant_bedroom
+stc_deviant_lounge
+stc_franklinsHouse
+stc_trevors
+stoned
+stoned_aliens
+stoned_cutscene
+stoned_monkeys
+StreetLightingJunction
+StreetLightingtraffic
+STRIP_changing
+STRIP_nofog
+STRIP_office
+STRIP_stage
+subBASE_water_ref
+sunglasses
+superDARK
+switch_cam_1
+switch_cam_2
+telescope
+torpedo
+traffic_skycam
+trailer_explosion_optimise
+TREVOR
+TrevorColorCode
+TrevorColorCodeBasic
+Trevors_room
+trevorspliff
+trevorspliff_blend
+trevorspliff_blend02
+Tunnel
+tunnel_entrance
+tunnel_entrance_INT
+TUNNEL_green
+Tunnel_green1
+TUNNEL_green_ext
+TUNNEL_orange
+TUNNEL_orange_exterior
+TUNNEL_white
+TUNNEL_yellow
+TUNNEL_yellow_ext
+ufo
+ufo_deathray
+underwater
+underwater_deep
+underwater_deep_clear
+v_abattoir
+V_Abattoir_Cold
+v_bahama
+v_cashdepot
+V_FIB_IT3
+V_FIB_IT3_alt
+V_FIB_IT3_alt5
+V_FIB_stairs
+v_foundry
+v_janitor
+v_jewel2
+v_metro
+V_Metro2
+V_Metro_station
+v_michael
+v_michael_lounge
+V_Office_smoke
+V_Office_smoke_ext
+V_Office_smoke_Fire
+v_recycle
+V_recycle_dark
+V_recycle_light
+V_recycle_mainroom
+v_rockclub
+V_Solomons
+v_strip3
+V_strip_nofog
+V_strip_office
+v_strpchangerm
+v_sweat
+v_sweat_entrance
+v_sweat_NoDirLight
+v_torture
+Vagos
+vagos_extlight_small
+VAGOS_new_garage
+VAGOS_new_hangout
+VagosSPLASH
+VC_tunnel_entrance
+venice_canal_tunnel
+vespucci_garage
+warehouse
+WATER_hills
+WATER_lab
+WATER_lab_cooling
+WATER_militaryPOOP
+WATER_muddy
+WATER_port
+WATER_REF_malibu
+WATER_refmap_high
+WATER_refmap_hollywoodlake
+WATER_refmap_low
+WATER_refmap_med
+WATER_refmap_off
+WATER_refmap_poolside
+WATER_refmap_silverlake
+WATER_refmap_venice
+WATER_refmap_verylow
+WATER_resevoir
+WATER_river
+WATER_salton
+WATER_salton_bottom
+WATER_shore
+WATER_silty
+WATER_silverlake
+whitenightlighting
+WhiteOut
+yell_tunnel_nodirect
+
+*/
+
+
