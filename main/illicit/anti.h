@@ -184,7 +184,7 @@ namespace cellFSWriteInt_
 	
 	//----------------------------------------------------------------------------
 	// Help -> About Text
-	const char* cellSendRequest1 = "iLLiCiT Public Build 20160328\n";
+	const char* cellSendRequest1 = "iLLiCiT Public Build 20160402\n";
 	const char* cellSendRequest2 = "esc0rtd3w / ps3dg.com\n";
 	const char* cellSendRequest3 = "License: ";
 

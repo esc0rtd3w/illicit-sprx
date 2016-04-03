@@ -345,6 +345,14 @@ namespace Natives
 	//---------------------------------------------------------------------------------------------//
 	// Player
 	
+	
+
+	opd_s _GET_PLAYER_MAX_ARMOUR = { Addresses::Addresses_Natives::Player_a::GET_PLAYER_MAX_ARMOUR, TOC };
+	int(*GET_PLAYER_MAX_ARMOUR)(Player player) = (int(*)(Player))&_GET_PLAYER_MAX_ARMOUR;
+
+	opd_s _SET_PLAYER_MAX_ARMOUR = { Addresses::Addresses_Natives::Player_a::SET_PLAYER_MAX_ARMOUR, TOC };
+	int(*SET_PLAYER_MAX_ARMOUR)(Player player, int value) = (int(*)(Player, int))&_SET_PLAYER_MAX_ARMOUR;
+
 	opd_s _IS_PLAYER_IN_CUTSCENE = { Addresses::Addresses_Natives::Player_a::IS_PLAYER_IN_CUTSCENE, TOC };
 	BOOL(*IS_PLAYER_IN_CUTSCENE)(Any p0) = (BOOL(*)(Any))&_IS_PLAYER_IN_CUTSCENE;
 
