@@ -71,6 +71,7 @@
     <ClInclude Include="cell.h" />
     <ClInclude Include="colors.h" />
     <ClInclude Include="core.h" />
+    <ClInclude Include="id.h" />
     <ClInclude Include="weapons.h" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="hashes.h" />

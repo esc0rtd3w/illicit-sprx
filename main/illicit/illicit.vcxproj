@@ -82,6 +82,7 @@
     <ClInclude Include="hook.h" />
     <ClInclude Include="hud.h" />
     <ClInclude Include="hud_game.h" />
+    <ClInclude Include="id.h" />
     <ClInclude Include="includes.h" />
     <ClInclude Include="keyboard.h" />
     <ClInclude Include="licensing.h" />

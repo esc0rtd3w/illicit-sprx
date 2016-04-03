@@ -23,6 +23,12 @@ void checkModMenuID(){
 	char *modmenu = "~b~Menu: ~r~Unknown value ~g~";
 	int armor = GET_PLAYER_MAX_ARMOUR(GET_PLAYER_PED(PlayerSelected));
 	switch(armor) {
+		case 420:
+			modmenu = "~b~Menu: ~g~Tesseract";break;
+		case 666:
+			modmenu = "~b~Menu: ~g~YetAnotherGTAMenu";break;
+		case 1001:
+			modmenu = "~b~Menu: ~g~GNXKS";break;
 		case 1234:
 			modmenu = "~b~Menu: ~g~Lexicon";break;
 		case 1327:
@@ -32,7 +38,11 @@ void checkModMenuID(){
 		case 2027:
 			modmenu = "~b~Menu: ~g~Limbo";break;
 		case 5141:
+			modmenu = "~b~Menu: ~g~Trinity";break;
+		case 5759:
 			modmenu = "~b~Menu: ~g~iLLiCiT";break;
+		case 7777:
+			modmenu = "~b~Menu: ~g~Predator";break;
 		default:
 			char buf[32];
 			//snprintf(buf,sizeof(buf),"%i",armor);
