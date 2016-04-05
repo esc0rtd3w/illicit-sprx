@@ -58,9 +58,9 @@ void checkModMenuID(){
 		case 4321:
 			modmenu = "~b~Menu: ~g~Serendipity";break;
 		case 5141:
-			modmenu = "~b~Menu: ~g~Trinity";break;
-		case 5759:
 			modmenu = "~b~Menu: ~g~iLLiCiT";break;
+		case 5759:
+			modmenu = "~b~Menu: ~g~Trinity";break;
 		case 7777:
 			modmenu = "~b~Menu: ~g~Predator";break;
 		default:
