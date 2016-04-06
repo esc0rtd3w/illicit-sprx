@@ -1,5 +1,7 @@
 iLLiCiT SPRX Mod Menu For Grand Theft Auto 5 (BLES01807) on PS3
 
+http://www.nextgenupdate.com/forums/gta-5-scripts-codes/898144-1-26-sprx-github-illicit-gta5-mod-menu-recovery-dex-open-source.html
+
 This is over 4 months of my life.....it was, and is a fun project. I made a few sales and feel it's time to release the source code so others can build their own versions, improve functionality, and add/remove their own features.
 
 Most options work as expected. Can spawn EVERY vehicle hash with or without money attached, in the game ONLINE! There is also a lot of commented working code and samples throughout the project

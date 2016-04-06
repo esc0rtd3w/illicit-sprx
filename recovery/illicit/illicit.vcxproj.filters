@@ -106,5 +106,8 @@
     <ClInclude Include="weapons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="id.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
