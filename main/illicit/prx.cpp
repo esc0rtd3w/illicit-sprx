@@ -52,9 +52,6 @@ using namespace Natives;
 using namespace TimeBomb;
 using namespace Weather_f;
 
-
-	
-
 Timer Delay;
 void Hook(int timer)
 {
