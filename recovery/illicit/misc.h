@@ -47,7 +47,7 @@ namespace Misc
 	bool isMenuSoundBack;
 
 	int rankValueModifier;
-
+	
 	
 	float x_OffsetFollow;
 	float DifFollow;
