@@ -11,7 +11,7 @@ using namespace Hud;
 // Loops
 
 
-bool isThreadExit;
+//bool isThreadExit;
 
 // Menu Colors for Players
 //bool self_;
@@ -25,15 +25,15 @@ bool adjustPlayerSelect = true;
 int adjustRankIncrease = 1024;
 
 
-bool isDebugPlayersActive;
-bool isDebugNetworkActive;
+//bool isDebugPlayersActive;
+//bool isDebugNetworkActive;
 
 // Used for help context on menu
 //bool isHelpContext;
 bool showMenuHelpContext;
 //bool hideMenuHelpContext;
 
-bool systemCheckActive;
+//bool systemCheckActive;
 
 bool showWorldDateTime;
 
@@ -59,18 +59,18 @@ bool deleteVehicle;
 
 // Nearby Car Stuff
 
-bool isNearbyCarMayhem;
-bool isNearbyCarMayhemBoost;
-bool isNearbyCarMayhemExplode;
-bool isNearbyCarMayhemUltimate;
-bool isNearbyCarDetectActive;
-bool isControlAllNearbyVehicles;
+//bool isNearbyCarMayhem;
+//bool isNearbyCarMayhemBoost;
+//bool isNearbyCarMayhemExplode;
+//bool isNearbyCarMayhemUltimate;
+//bool isNearbyCarDetectActive;
+//bool isControlAllNearbyVehicles;
 
-bool isTorqueModifierActive;
-int torqueValue;
+//bool isTorqueModifierActive;
+//int torqueValue;
 
-bool isTorqueModifierNearbyActive;
-int torqueValueNearby;
+//bool isTorqueModifierNearbyActive;
+//int torqueValueNearby;
 
 bool areBlinkersActive;
 
@@ -101,7 +101,7 @@ bool isMoneySpawningOnVehicle;
 char* moneySpawnProp;
 	
 
-bool isVehicleJitterActive;
+//bool isVehicleJitterActive;
 
 bool isUpdateVehicleManager;
 bool isUpdatePlayersMenu;
@@ -130,8 +130,8 @@ bool isSuperJumpActive;
 bool isSuperRunActive;
 bool isSuperSwimActive;
 
-bool isParachuteOpen;
-bool isParachuteSmokeEnabled;
+//bool isParachuteOpen;
+//bool isParachuteSmokeEnabled;
 
 bool isFireFeetActive;
 bool isShowCoordsActive;
@@ -143,12 +143,12 @@ bool playerGodmode;
 
 
 // Peds
-bool isPedFleeing;
-bool isPedWet;
+//bool isPedFleeing;
+//bool isPedWet;
 
 
 //bool ifWaterModify;
-int waterLevel;
+//int waterLevel;
 
 
 

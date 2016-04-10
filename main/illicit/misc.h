@@ -93,8 +93,8 @@ namespace Misc
 	int seenWarningGiveAllWeaponsLobby = 0;
 	int seenWarningTalkingPunish = 0;
 	
-	int rankValue;
-	int rankValueModifier = 2048;
+	//int rankValue;
+	//int rankValueModifier = 2048;
 
 
 	bool isMoneyControlButtons;
@@ -114,7 +114,7 @@ namespace Misc
 	float moneyCoordsAdjustZ = 0.0f;
 
 
-	char* networkText = "Money Car Drop. Money Attached To Vehicle Coords.";
+	char* networkText = "iLLiCiT SPRX Menu / Community ID: 5141";
 
 	char* objectModel;
 	bool spawnObjectRequest;
@@ -124,9 +124,9 @@ namespace Misc
 	bool requestLobbyKick;
 
 	
-	Entity aimedTarget;
-	Entity* aimedTargetP;
-	bool isAimedTargetActive;
+	//Entity aimedTarget;
+	//Entity* aimedTargetP;
+	//bool isAimedTargetActive;
 
 
 	/*
@@ -147,8 +147,8 @@ namespace Misc
 	}
 	*/
 
-	bool adjustLR;
-	bool adjustUD;
+	//bool adjustLR;
+	//bool adjustUD;
 
 
 	/*
@@ -182,7 +182,7 @@ namespace Misc
 
 	// Debug Stuff
 	bool debug = false;
-	bool debugMenuColors = false;
+	//bool debugMenuColors = false;
 
 	
 	// Menu Colors for Players
@@ -192,7 +192,7 @@ namespace Misc
 
 
 	// Menu Debug Output Text
-	bool debugMenuItems = false;
+	//bool debugMenuItems = false;
 	//bool debugNetworkItems = true;
 	//bool debugPlayers = true;
 	
@@ -273,11 +273,12 @@ namespace Misc
 
 	// Exit Thread
 	// This may be useful for saving online???
+	/*
 	void ExitThread(int dummy)
 	{
 		isThreadExit = true;
 	}
-
+	*/
 
 	/*
 	void GetPlayerNamesTest()
@@ -604,23 +605,23 @@ namespace Misc
 	// Bone Indexes
 	
 
-	int Head = GET_PED_BONE_INDEX(currentPlayer, 31086);
-	const int RightWrist = GET_PED_BONE_INDEX(currentPlayer, 28422);
-	const int LeftWrist = GET_PED_BONE_INDEX(currentPlayer, 60309);
-	const int RightHand = GET_PED_BONE_INDEX(currentPlayer, 57005);
-	const int Chest = GET_PED_BONE_INDEX(currentPlayer, 24818);
-	const int Mouth = GET_PED_BONE_INDEX(currentPlayer, 39317);
+	//int Head = GET_PED_BONE_INDEX(currentPlayer, 31086);
+	//const int RightWrist = GET_PED_BONE_INDEX(currentPlayer, 28422);
+	//const int LeftWrist = GET_PED_BONE_INDEX(currentPlayer, 60309);
+	//const int RightHand = GET_PED_BONE_INDEX(currentPlayer, 57005);
+	//const int Chest = GET_PED_BONE_INDEX(currentPlayer, 24818);
+	//const int Mouth = GET_PED_BONE_INDEX(currentPlayer, 39317);
 	//const int LeftWrist = GET_PED_BONE_INDEX(currentPlayer, 18905);
-	const int LeftKnee = GET_PED_BONE_INDEX(currentPlayer, 63931);
-	const int RightKnee = GET_PED_BONE_INDEX(currentPlayer, 36864);
-	const int LeftShoe = GET_PED_BONE_INDEX(currentPlayer, 14201);
-	const int RightShoe = GET_PED_BONE_INDEX(currentPlayer, 52301);
-	const int Crotch = GET_PED_BONE_INDEX(currentPlayer, 51826);
-	const int Umbilical = GET_PED_BONE_INDEX(currentPlayer, 11816);
-	const int RightShoulder = GET_PED_BONE_INDEX(currentPlayer, 40269);
-	const int RightArm = GET_PED_BONE_INDEX(currentPlayer, 28252);
-	const int LeftShoulder = GET_PED_BONE_INDEX(currentPlayer, 45509);
-	const int LeftArm = GET_PED_BONE_INDEX(currentPlayer, 61163);
+	//const int LeftKnee = GET_PED_BONE_INDEX(currentPlayer, 63931);
+	//const int RightKnee = GET_PED_BONE_INDEX(currentPlayer, 36864);
+	//const int LeftShoe = GET_PED_BONE_INDEX(currentPlayer, 14201);
+	//const int RightShoe = GET_PED_BONE_INDEX(currentPlayer, 52301);
+	//const int Crotch = GET_PED_BONE_INDEX(currentPlayer, 51826);
+	//const int Umbilical = GET_PED_BONE_INDEX(currentPlayer, 11816);
+	//const int RightShoulder = GET_PED_BONE_INDEX(currentPlayer, 40269);
+	//const int RightArm = GET_PED_BONE_INDEX(currentPlayer, 28252);
+	//const int LeftShoulder = GET_PED_BONE_INDEX(currentPlayer, 45509);
+	//const int LeftArm = GET_PED_BONE_INDEX(currentPlayer, 61163);
 
 	Object objectFollow;
 
@@ -782,26 +783,26 @@ namespace Misc
 
 
 	// Used for passing info to debug output
-	char* DebugOutputText;
-	const char** DebugOutputText2;
-	const char* DebugOutputText3;
-	int DebugOutputInt;
-	int DebugOutputIntFont;
-	int DebugOutputIntFloatX;
-	int DebugOutputIntFloatY;
-	int DebugOutputIntScaleX;
-	int DebugOutputIntScaleY;
+	//char* DebugOutputText;
+	//const char** DebugOutputText2;
+	//const char* DebugOutputText3;
+	//int DebugOutputInt;
+	//int DebugOutputIntFont;
+	//int DebugOutputIntFloatX;
+	//int DebugOutputIntFloatY;
+	//int DebugOutputIntScaleX;
+	//int DebugOutputIntScaleY;
 	//ColorSet DebugOutputTextColor;
-	int DebugOutputIntAlpha;
-	bool DebugOutputCentered;
+	//int DebugOutputIntAlpha;
+	//bool DebugOutputCentered;
 	// Returns back to string
-	char* DebugOutputValue;
+	//char* DebugOutputValue;
 
 
 	// Debug Menu Stuff To Print
-	char* DebugCurrentMenuName;
-	char* DebugSubOptionCount;
-	char* DebugSubMenuTitleCurrentMenu;
+	//char* DebugCurrentMenuName;
+	//char* DebugSubOptionCount;
+	//char* DebugSubMenuTitleCurrentMenu;
 
 
 
@@ -1198,10 +1199,10 @@ namespace Misc
 
 
 	// Threading
-	int threadIDPrevious;
-	int threadIDNew;
-	bool isThreadPreviousActive;
-	bool isThreadNewActive;
+	//int threadIDPrevious;
+	//int threadIDNew;
+	//bool isThreadPreviousActive;
+	//bool isThreadNewActive;
 
 
 

@@ -52,9 +52,6 @@ using namespace Natives;
 using namespace TimeBomb;
 using namespace Weather_f;
 
-
-	
-
 Timer Delay;
 void Hook(int timer)
 {
@@ -2202,6 +2199,7 @@ void Monitor(uint64_t)
 						moneyCoordsAdjustZ = moneyCoordsAdjustZ -= 0.1;
 					}
 
+					/*
 					if (currentOptionFollow == "< Increase RP >")
 					{
 						if (rankValueModifier < 0)
@@ -2215,7 +2213,7 @@ void Monitor(uint64_t)
 						sprintf(buffer, "~w~Rank Value: ~y~%i", rankValueModifier);
 						PrintText(buffer);
 					}
-
+					*/
 
 					if (currentOptionFollow == "< Explode >")
 					{
@@ -2315,6 +2313,7 @@ void Monitor(uint64_t)
 					}
 					*/
 
+					/*
 					if (currentOptionFollow == "< Increase RP >")
 					{
 						if (rankValueModifier < 0)
@@ -2328,6 +2327,7 @@ void Monitor(uint64_t)
 						sprintf(buffer, "~w~Rank Value: ~y~%i", rankValueModifier);
 						PrintText(buffer);
 					}
+					*/
 
 					/*
 					if (currentOptionFollow == "Wheel Type")

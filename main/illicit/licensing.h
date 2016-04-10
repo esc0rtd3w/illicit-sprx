@@ -57,9 +57,6 @@ namespace Licensing
 	// This must match current license type
 	//int LicenseTypeCheck = LicenseTypeCheckPaid;
 
-	
-	
-	// FAKE DEMO TIMER
 
 	// Real remaining time (TOTAL - GET_GAME_TIMER)
 	int demoTimeRemaining;

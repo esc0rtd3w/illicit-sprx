@@ -72,13 +72,14 @@ namespace Peds_f
 
 
 	// Player Stats
+	/*
 	bool isDebugPlayersActiveT = false;
 	void ToggleStatsPlayers(int toggle)
 	{
 		isDebugPlayersActiveT = !isDebugPlayersActiveT;
 		isDebugPlayersActive = isDebugPlayersActiveT;
 	}
-	
+	*/
 	
 
 	// Get Entity Model
@@ -1471,7 +1472,7 @@ namespace Peds_f
 	// Nearby Car Stuff
 
 	
-
+	/*
 	bool isControlAllNearbyVehiclesT = false;
 	void NearbyCarControlAll(int dummy)
 	{
@@ -1479,8 +1480,9 @@ namespace Peds_f
 		isControlAllNearbyVehicles = isControlAllNearbyVehiclesT;
 		MsgToggleDefault("Control All Nearby Cars", isControlAllNearbyVehiclesT);
 	}
+	*/
 
-
+	/*
 	bool isNearbyCarMayhemT = false;
 	//bool isNearbyCarMayhemBoost = false;
 	void NearbyCarMayhem(int style)
@@ -1493,7 +1495,7 @@ namespace Peds_f
 		isNearbyCarMayhem = isNearbyCarMayhemT;
 		MsgToggleDefault("Total Mayhem", isNearbyCarMayhemT);
 	}
-		
+	*/
 
 	
 
@@ -1539,6 +1541,7 @@ namespace Peds_f
 	}
 	*/
 	
+/*
 	bool isNearbyCarDetectActiveT = false;
 	void ToggleNearbyVehicleDetect(int dummy)
 	{		
@@ -1547,7 +1550,8 @@ namespace Peds_f
 		MsgToggleDefault("Closest Vehicle Detect", isNearbyCarDetectActiveT);
 
 	}
-	
+	*/
+
 	/*
 	bool isTorqueModifierNearbyActiveT = false;
 	void ToggleNearbyVehicleTorqueBackward(int dummy)

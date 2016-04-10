@@ -33,6 +33,8 @@ void checkModMenuID(){
 			modmenu = "~b~Menu: ~g~SPRX_K";break;
 		case 88:
 			modmenu = "~b~Menu: ~g~Pheonix";break;
+		case 97:
+			modmenu = "~b~Menu: ~g~Serendipity";break;
 		case 337:
 			modmenu = "~b~Menu: ~g~GenocideFreeze";break;
 		case 420:
@@ -41,6 +43,8 @@ void checkModMenuID(){
 			modmenu = "~b~Menu: ~g~GNXKS";break;
 		case 666:
 			modmenu = "~b~Menu: ~g~YetAnotherGTAMenu";break;
+		case 1084:
+			modmenu = "~b~Menu: ~g~BlueWindow";break;
 		case 1234:
 			modmenu = "~b~Menu: ~g~Lexicon";break;
 		case 1327:
@@ -55,8 +59,8 @@ void checkModMenuID(){
 			modmenu = "~b~Menu: ~g~Project Eke";break;
 		case 2027:
 			modmenu = "~b~Menu: ~g~Limbo";break;
-		case 4321:
-			modmenu = "~b~Menu: ~g~Serendipity";break;
+		case 4269:
+			modmenu = "~b~Menu: ~g~Cojones SPRX";break;
 		case 5141:
 			modmenu = "~b~Menu: ~g~iLLiCiT";break;
 		case 5759:
@@ -65,9 +69,8 @@ void checkModMenuID(){
 			modmenu = "~b~Menu: ~g~Predator";break;
 		default:
 			char buf[32];
-			//snprintf(buf,sizeof(buf),"%i",armor);
-			sprintf(buf, "%i" ,armor);
-			strcat(modmenu,buf);
+			snprintf(buf, sizeof(buf), "%i", armor);
+			strcat(modmenu, buf);
 			break;
 	}
 }
