@@ -1,174 +1,1307 @@
+iLLiCiT SPRX Mod Menu For Grand Theft Auto 5 (BLES01807) on PS3
 
+http://www.nextgenupdate.com/forums/gta-5-scripts-codes/898144-1-26-sprx-github-illicit-gta5-mod-menu-recovery-dex-open-source.html
 
+iLLiCiT SPRX Mod Menu For GTA5 PS3 (BLES01807) 
 
-[ COOL LOGO HERE ]
+Now FREE and OPEN SOURCE!!! 
 
+GNU General Public License v3.0 
 
-iLLiCiT GTA:V SPRX Menu
+GitHub Location: https://github.com/esc0rtd3w/illicit-sprx 
 
+The source can be compiled with Visual Studio 2010 + PS3 SDK 3.60+ on Windows 
 
-esc0rtd3w / 2015
+Current Stable Compiled Binaries 
 
+The compiled binaries (SPRX) are available on GitHub here: https://github.com/esc0rtd3w/illicit-sprx/releases 
 
------------------------------------------
-Platform: Playstation 3
+Testing Compiled Binaries 
 
-Type: Mod Menu
+TEST SPRX BINARIES TO TEST AND SEE IF THEY LOAD OK (I Currently Have no PS3 to test on)
 
-Format: SPRX
+https://github.com/esc0rtd3w/illicit-sprx/releases/tag/1.0.2-test1 
 
-Target Game: Grand Theft Auto 5
+Thanks to all for any research and referenced code used during the course of the project :) 
 
-Disc ID: BLES01807
+If any credits were missed anywhere for anything, I apologize and will add them as I update the GitHub Master Branch as commented code. 
 
-Region: Europe
------------------------------------------
+This is over 4 months of my life.....it was, and is a fun project. I made a few sales and feel it's time to release the source code so others can build their own versions, improve functionality, and add/remove their own features. 
 
+Most options work as expected. Can spawn EVERY vehicle hash with or without money attached, in the game ONLINE! There is also a lot of commented working code and samples throughout the project 
 
+You can change the current active player by using DPAD_Left & DPAD_Right while most sub-menus are open on player options. 
 
+I do realize that my C++ skills are mediocre, at best ;) I also realize that most of my code should be in .cpp files and not .h files. I recently re-learned C/C++, got interested in making a menu, and I just never had enough free time to make anything better....yet! 
 
-Menu Layout
+Here is a list of Features, Examples, Usage and Installation 
 
-OK = Works As Intended
-BAD = Does Not Work
-NR = Not Ready or Not Yet Available
-FTR = Future or Not Shown in Menu
+(STILL ADDING STUFF TO IT!!!) 
 
+Community Mod Menu ID Support [spoiler]
 
+Supporting New Mod Menu ID
 
-[Self Mods]
-	[Change Name]
-		Input Custom <-- NR
-		Random <-- NR
-		Clone From Lobby <-- NR
-		Default PSN <-- NR
-		iLLiCiT <-- OK
-		ALL EMPTY SPACES <-- OK
-		**Invalid** <-- OK
-		Rockstar <-- OK
-		Rockstar Games <-- OK
-		Rockstar North <-- OK
-		Sony Moderator <-- OK
-	
-	[Change Model]
-		Input Custom <-- NR
-		Clone Another Player <-- NR
-		[Animals]
-			Boar <-- OK
-			Chickenhawk <-- OK
-			Chimp <-- OK
-			Chop <-- BAD (Freezes)
-			Cormorant <-- OK
-			Coyote <-- OK
-			Crow <-- OK
-			Deer <-- OK
-			Fish <-- OK (Dies Instantly)
-			Hen <-- OK
-			Husky <-- OK
-			Mountain Lion <-- BAD (Freezes)
-			Pig <-- OK
-			Pigeon <-- OK
-			Rat <-- OK
-			Retriever <-- BAD (Freezes)
-			Rhesus Monkey <-- OK
-			Rottweiler <-- BAD (Freezes)
-			Seagull <-- OK
-			Shark <-- BAD (Freezes)
-			Shepherd <-- BAD (Freezes)
-			
-		[Story Mode Characters] <-- NR
-		
-		[Male Peds] <-- NR
-		
-		[Female Peds] <-- NR
-		
-		[Police & Emergency]
-		
-		[Strippers & Hookers]
-		
-		[Glitch Characters] <-- NR
-	
-	[Change Outfit] <-- NR
-		Input Custom <-- NR
-		Police Officer <-- NR
-		Fireman <-- NR
-	
-	[Animations] <-- NR
-	
-	[Toggles] <-- OK
-	
-	[Items] <-- BAD (Some May Work Online)
-	
-	[Multipliers] <-- NR
-	
-	[Camera Options] <-- NR
-	
-	[Time Cycle Modifier] <-- OK (All Sub Items Work)
-	
-	[Mobile Phone] <-- OK (All Sub Items Work)
-	
-	[Developer T-Shirts] <-- NR
-	
-	Clone Player <-- BAD
-	
-	Apply Damage <-- OK
-	
-	Explode <-- OK
-	
-	Explode Custom <-- OK
-	
-	
-[Players] <-- NR (Most Options Only Work For Player 0)
+Source: http://www.nextgenupdate.com/forums/gta-5-scripts-codes/898332-all-sprx-developers-community-mod-menu-id-list.html 
 
+iLLiCiT Community Mod Menu ID 5141 
 
-[Lobby] <-- NR (Most Options Only Work For Player 0)
+Main code located in id.h . These 2 functions are disabled currently but can be called from prx.cpp or another method or your choosing. 
 
+setModMenuID Function [spoiler]
 
-[Teleport]
+int communityID = 5141;
 
+void setModMenuID(){
 
-[Weapons]
+SET_PLAYER_MAX_ARMOUR(PlayerSelf(), communityID);
 
+}[/spoiler]
 
-[Vehicles]
+checkModMenuID Function [spoiler]
 
+void checkModMenuID(){
 
-[Objects]
+char *modmenu = "~b~Menu: ~r~Unknown value ~g~";
 
+int armor = GET_PLAYER_MAX_ARMOUR(GET_PLAYER_PED(PlayerSelected));
 
-[Peds]
+switch(armor) {
 
+case 23:
 
-[Weather]
+modmenu = "~b~Menu: ~g~Metropolis";break;
 
+case 28:
 
-[Recovery]
+modmenu = "~b~Menu: ~g~Jarvis";break;
 
+case 69:
 
-[Protection]
+modmenu = "~b~Menu: ~g~Tesseract";break;
 
+case 71:
 
-[Misc]
+modmenu = "~b~Menu: ~g~SPRX_K";break;
 
+case 88:
 
-[Help]
-	Toggle Help Context <-- NR
-	Using Menus <-- NR
-	Customization <-- NR
-	Credits <-- OK
-	About <-- OK
+modmenu = "~b~Menu: ~g~Pheonix";break;
 
+case 97:
 
+modmenu = "~b~Menu: ~g~Serendipity";break;
 
+case 337:
 
+modmenu = "~b~Menu: ~g~GenocideFreeze";break;
 
+case 420:
 
+modmenu = "~b~Menu: ~g~Glisten Is Gay";break;
 
+case 631:
 
+modmenu = "~b~Menu: ~g~GNXKS";break;
 
+case 666:
 
+modmenu = "~b~Menu: ~g~YetAnotherGTAMenu";break;
 
+case 1084:
 
+modmenu = "~b~Menu: ~g~BlueWindow";break;
 
+case 1234:
 
+modmenu = "~b~Menu: ~g~Lexicon";break;
 
+case 1327:
+
+modmenu = "~b~Menu: ~g~Independence";break;
+
+case 1337:
+
+modmenu = "~b~Menu: ~g~Plethora";break;
+
+case 1996:
+
+modmenu = "~b~Menu: ~g~Power SPRX";break;
+
+case 2000:
+
+modmenu = "~b~Menu: ~g~Ice";break;
+
+case 2001:
+
+modmenu = "~b~Menu: ~g~Project Eke";break;
+
+case 2027:
+
+modmenu = "~b~Menu: ~g~Limbo";break;
+
+case 4269:
+
+modmenu = "~b~Menu: ~g~Cojones SPRX";break;
+
+case 5141:
+
+modmenu = "~b~Menu: ~g~iLLiCiT";break;
+
+case 5759:
+
+modmenu = "~b~Menu: ~g~Trinity";break;
+
+case 7777:
+
+modmenu = "~b~Menu: ~g~Predator";break;
+
+default:
+
+char buf[32];
+
+snprintf(buf, sizeof(buf), "%i", armor);
+
+strcat(modmenu, buf);
+
+break;
+
+}
+
+}[/spoiler]
+
+[/spoiler]
+
+Anti-Piracy Features and Usage [spoiler]
+
+There are currently 8, i think...lol, "anti flags" that are checked during the loading of the menu. These are all BOOL responses that check certain text fields for modification. Each one that fails will trigger a TRUE response and if ANY fail there is another BOOL that is flagged as TRUE. The third and final check is another BOOL that if triggered TRUE will ultimately throw the "Modified ELF Detected" message. 
+
+Most Anti-Piracy Code is located in "anti.h". The checking of the final BOOL response from "anti.h", and handing out piracy punishments are located in "prx.cpp" ;) 
+
+Modifed ELF Flag [spoiler]
+
+isCellWebRequestFTP = true;[/spoiler]
+
+Force Expire Demo Timer [spoiler]
+
+isCellFSTerminated = true;[/spoiler] 
+
+The default punishment is expiring Demo Timer, removing ambient light, taking weapons in a loop, and displaying a HUGE MIDDLE FINGER in the center of the screen, as well as a friendly reminder message not to be a pirate ;) 
+
+The Anti-Piracy function names and variables used are pretty random and cryptic. My original thought was to make it harder to reverse engineer, but after compiling over several months, this seemed not so important. I never got around to changing the names to a more appropriate scheme. I may do so in the future and commit more changes to the Master Branch on GitHub. 
+
+[/spoiler]
+
+Changing Values of Protected Text Fields [spoiler]
+
+There are several text fields that are protected by Anti-Piracy code. If any of them are modified, they trigger flags that cause the "Modified ELF Detected" message, which in turn cripples gameplay to the point where you CAN'T or DON'T WANT TO PLAY until the modified menu is removed! These can obviously be changed to your liking or removed completely, but I will show a few examples of how to change things as they are. 
+
+** Keep in mind that the naming scheme used here is somewhat gibberish and follows no real pattern (see above Anti-Piracy help section) ** 
+
+The *actual* text strings are located in anti.h for any protected text. 
+
+Menu Main Title (iLLiCiT SPRX Menu) 
+
+Example: [spoiler]
+
+const char* cellReadFS1 = "iLLiCiT";
+
+const char* cellReadFS2 = "u";
+
+const char* cellReadFS3 = "M";
+
+const char* cellReadFS4 = "S";
+
+const char* cellReadFS5 = "e";
+
+const char* cellReadFS6 = "X";
+
+const char* cellReadFS7 = "P";
+
+const char* cellReadFS8 = "R";
+
+const char* cellReadFS9 = "n"; 
+
+const char* cellReadFS()
+
+{
+
+char buffer[100];
+
+sprintf(buffer, "%s %s%s%s%s %s%s%s%s", cellReadFS1, cellReadFS4, cellReadFS7, cellReadFS8, cellReadFS6, cellReadFS3, cellReadFS5, cellReadFS9, cellReadFS2);
+
+return buffer;
+
+}
+
+[/spoiler]
+
+The text is split into 9 different characters. Each character is appended to the next correct one, making a new char with the complete string. This is solely based on how my brain was operating at the time. It also makes hex editing more difficult, which was my original intent, but for a n00b....they can't figure it out :facepalm: 
+
+The 1st char is const char* cellReadFS1 = "iLLiCiT"; followed by 8 additional chars (S P R X M E N U), each representing a different ASCII character in a "random" order. Each wrong character will trigger a FALSE response which ultimately triggers one of the anti flags. 
+
+Each char is checked here (part of the cellPS3EnumInt32() function):[spoiler]
+
+// Check Title Text Part 1
+
+if (cellReadFS1[0] == 'i' && cellReadFS1[1] == 'L' && cellReadFS1[2] == 'L' && cellReadFS1[3] == 'i' && cellReadFS1[4] == 'C' && cellReadFS1[5] == 'i' && cellReadFS1[6] == 'T') 
+
+{
+
+cellPRXInt32 = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt32 = false;
+
+}
+
+// Check Title Text Part 2
+
+if (cellReadFS2[0] == 'u') 
+
+{
+
+cellPRXInt16a = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16a = false;
+
+}
+
+// Check Title Text Part 3
+
+if (cellReadFS3[0] == 'M') 
+
+{
+
+cellPRXInt16b = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16b = false;
+
+}
+
+// Check Title Text Part 4
+
+if (cellReadFS4[0] == 'S') 
+
+{
+
+cellPRXInt16c = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16c = false;
+
+}
+
+// Check Title Text Part 5
+
+if (cellReadFS5[0] == 'e') 
+
+{
+
+cellPRXInt16d = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16d = false;
+
+}
+
+// Check Title Text Part 6
+
+if (cellReadFS6[0] == 'X') 
+
+{
+
+cellPRXInt16e = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16e = false;
+
+}
+
+// Check Title Text Part 7
+
+if (cellReadFS7[0] == 'P') 
+
+{
+
+cellPRXInt16f = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16f = false;
+
+}
+
+// Check Title Text Part 8
+
+if (cellReadFS8[0] == 'R') 
+
+{
+
+cellPRXInt16g = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16g = false;
+
+}
+
+// Check Title Text Part 9
+
+if (cellReadFS9[0] == 'n') 
+
+{
+
+cellPRXInt16h = true;
+
+} 
+
+else
+
+{
+
+cellPRXInt16h = false;
+
+}[/spoiler]
+
+Now finally, to print the actual new appended text to the menu, just change the first argument in the DrawText function to the new string from anti.h. 
+
+Here is an example (located in menu.h):[spoiler]
+
+DrawText( cellReadFS() , 7, 0.52 + x_Offset, 0.063, 1.00, 0.70, Colors::Common::Orange, 255, true);[/spoiler] 
+
+If you want to change the text, you must either match the checks to the same characters being checked, change the behavior of the checks, eliminate the checks, make a new string that is not protected, or a different way that you come up with.
+
+[/spoiler]
+
+Controlling Demo and Full Mode [spoiler]
+
+There are 4 BOOLS located in licensing.h for controlling DEMO state. There are 3 needed for actual Demo/Full Mode Switch, and 1 for Demo Nag Text. 
+
+This is to make it harder for "bit flipping" the BOOLS with a hex editor :kryptus: 
+
+Demo State Bool Flags [spoiler]
+
+// If DEMO set TRUE
+
+// If FALSE means FULL VERSION
+
+bool demoMode = false; 
+
+// If DEMO set FALSE
+
+// If TRUE means FULL VERSION
+
+bool notDemo = true; 
+
+// If DEMO set TRUE
+
+// If FALSE means ACTIVATED
+
+bool notActivated = false;[/spoiler]
+
+Demo Flag For Nag Text [spoiler]
+
+// If DEMO set TRUE
+
+// If FALSE means FULL VERSION
+
+// THIS ONE ONLY USED FOR TEXT
+
+bool demoModeText = false;[/spoiler]
+
+To activate Demo Mode or Full Mode currently, there are 2 sections in prx.cpp that must be commented/uncommented to change modes. 
+
+This behavior can be, and should be changed to a SWITCH/CASE function but for now if i want the Demo Mode turned on I comment the Full section and vice versa. 
+
+Example Demo Mode (Located in prx.cpp) [spoiler]
+
+if (GET_GAME_TIMER() 
+
+// Anti-Check*
+
+if (cellPS3XBOX)
+
+{
+
+drawMenu();
+
+}
+
+// If modified ELF
+
+else
+
+{
+
+isCellWebRequestFTP = true;
+
+isCellFSTerminated = true;
+
+closeMenu();
+
+}
+
+}
+
+// Expired Time
+
+else
+
+{
+
+// Anti-Check*
+
+if (cellPS3XBOX)
+
+{
+
+isCellFSTerminated = true;
+
+closeMenu();
+
+}
+
+// If modified ELF
+
+else
+
+{
+
+isCellWebRequestFTP = true;
+
+isCellFSTerminated = true;
+
+closeMenu();
+
+}
+
+}[/spoiler]
+
+Example Full Mode (Located in prx.cpp) [spoiler]
+
+if (cellPS3XBOX)
+
+{
+
+drawMenu(); 
+
+/*
+
+if (LicenseVerified)
+
+{
+
+drawMenu();
+
+}
+
+else
+
+{
+
+isCellNLTerminated = true;
+
+closeMenu();
+
+}
+
+*/
+
+}
+
+// If modified ELF
+
+else
+
+{
+
+isCellWebRequestFTP = true;
+
+isCellFSTerminated = true;
+
+closeMenu();
+
+}[/spoiler]
+
+Another thing that is coded into the project is changing the menu look as the timer gets to certain values. It is located in menu.h . 
+
+By default it changes the background and highlight color RED when it gets to 5 minutes and less. 
+
+Example Menu Behavior Based on Timer Value [spoiler]// Menu Background -> Draw Around Entire Menu
+
+if (demoModeText)
+
+{
+
+if (demoTimeRemaining > 5)
+
+{
+
+//DrawRect(0.52 + x_Offset, 0.140 + Dif / 2, .2, 0.155 + Dif, menuBGMain, 40);
+
+DrawRect(0.52 + x_Offset, 0.140 + Dif / 2, .2, 0.155 + Dif, Colors::Common::Black, 40);
+
+}
+
+else
+
+{
+
+//DrawRect(0.52 + x_Offset, 0.140 + Dif / 2, .2, 0.155 + Dif, menuBGMainDemo, 30);
+
+DrawRect(0.52 + x_Offset, 0.140 + Dif / 2, .2, 0.155 + Dif, Colors::Common::Red, 30);
+
+}
+
+}
+
+else
+
+{
+
+//DrawRect(0.52 + x_Offset, 0.140 + Dif / 2, .2, 0.155 + Dif, menuBGMain, 40);
+
+DrawRect(0.52 + x_Offset, 0.140 + Dif / 2, .2, 0.155 + Dif, Colors::Common::Black, 40);
+
+}[/spoiler]
+
+[/spoiler]
+
+Demo Timer and Value Control [spoiler]
+
+The demo timer is located in anti.h , and is controlled in milliseconds. There are 5 Dummy Demo Timers to discourage reverse-engineering attempts. 
+
+The dummy timers are set to reflect what looks like a 30 minute (or close) timer value. 
+
+The *REAL* Timer Value is just over 30 minutes. 
+
+This accommodates for the roughly 30 seconds before the prologue usually starts, where the menu is active in memory before you can press any buttons. 
+
+Dummy Demo Timers [spoiler]
+
+int cellSPRXDummy1 = 1860001;
+
+int cellSPRXDummy2 = 1860020;
+
+int cellSPRXDummy3 = 1800000;
+
+int cellSPRXDummy4 = 1860000;
+
+int cellSPRXDummy5 = 1800001;[/spoiler]
+
+Real Demo Timer [spoiler]
+
+int cellSPRX = 1840111;[/spoiler]
+
+[/spoiler]
+
+Changing The Initial XMB Splash Screen [spoiler]
+
+Help will be added soon!
+
+[/spoiler]
+
+Adjusting Menu Size, Position, Colors, and More [spoiler]
+
+Thanks to mythi for assistance in compiling the help text 
+
+Menu Colors and Positions (Default Areas) (menu.h) [spoiler] 
+
+To change the Header: 
+
+// Menu Background -> Draw Header
+
+DrawRect(0.52 + x_Offset, 0.105, 0.20, 0.07, Colors::Common::Green, 200);
+
+0.105 is the X-Position of the Header ( Function: Moving Header Up and Down )
+
+0.20 is the Y-Position of the Header ( Function: Moving Header to Left and Right )
+
+0.07 is the Z-Position of the Header ( Function: Size of the Header )
+
+Green is the Header Color and all the Colors can be found at colors.h 
+
+To change the Footer: 
+
+// Menu Background -> Draw Footer
+
+DrawRect(0.52 + x_Offset, 0.315 + DifFooter, 0.20, 0.07, Colors::Common::Green, 200);
+
+0.315 is the X-Position of the Footer ( Function: Moving Footer Up and Down )
+
+0.20 is the Y-Position of the Footer ( Function: Moving Footer to Left and Right )
+
+0.07 is the Z-Position of the Footer ( Function: Size of the Footer )
+
+Green is the Footer Color and all the Colors can be found at colors.h 
+
+To change the Header Text: 
+
+// Main Title Text
+
+DrawText(cellReadFS(), 7, 0.450 + x_Offset, 0.084, 0.50, 0.70, Colors::Common::White, 255, true);
+
+0.084 is the X-Position of the Header Text ( Function: Moving Header Text Up and Down )
+
+0.50 is the Y-Position of the Header Text ( Function: Moving Header Text to Left and Right )
+
+0.70 is the Z-Position of the Header Text ( Function: Size of the Header Text )
+
+White is the Header Text Color and all the Colors can be found at colors.h 
+
+To change the Main Title Text: 
+
+// Main Menu Current Subtitle Text
+
+DrawText(subMenuTitle[currentMenu], 1, 0.470 + x_Offset, 0.161, 0.95, 0.85, Colors::Common::White, 255, true);
+
+0.161 is the X-Position of the Main Title Text ( Function: Moving Main Title Text Up and Down )
+
+0.95 is the Y-Position of the Main Title Text ( Function: Moving Main Title Text to Left and Right )
+
+0.85 is the Z-Position of the Main Title Text ( Function: Size of the Main Title Text )
+
+White is the Main Title Text Color and all the Colors can be found at colors.h 
+
+To change the box around selected item: 
+
+// Draw a box around selected item
+
+DrawRect(0.52 + x_Offset, 0.250 + (0.045f*i), 0.20, 0.038, ColorHighlight, 200);
+
+0.52 + x_Offset is the X-Position (x_Offset is default .3)
+
+0.250 + (0.045f*i) is the Y-Position (the *i is adjusting for each menu item)
+
+0.20 is the Width
+
+0.038 is the Height
+
+ColorHighlight is the Color
+
+200 is the alpha 
+
+To Change the Sub Items Text Color: 
+
+// Menu Sub Items Default Text NOT SELECTED Color
+
+Color = Colors::Common::White;
+
+Simply change it to the color you want. You can find all the colors in colors.h 
+
+To Change the Selected Items Color: 
+
+// Change the color on selected item
+
+Color = Colors::Common::White;
+
+Simply change it to the color you want. You can find all the colors in colors.h 
+
+[/spoiler]
+
+There are also some functions in hud.h for doing some adjustments 
+
+Draw Notify Message (Above Map HUD) [spoiler]
+
+void DrawNotify(char* text, char* pic1, char* pic2, int icon, bool flash, char* sender, char* subject, int time)
+
+{
+
+NOTIFICATION_TYPE("STRING");
+
+ADD_TEXT_COMPONENT_STRING(text);
+
+//TIME_TO_DISPLAY(time);
+
+//SET_NOTIFICATION_MESSAGE("CHAR_SOCIAL_CLUB", "CHAR_SOCIAL_CLUB", true, 4, text, "");
+
+SET_NOTIFICATION_MESSAGE(pic1, pic2, flash, icon, sender, subject);
+
+DRAW_NOTIFICATION(false, true);
+
+}[/spoiler]
+
+Draw Sprite On Screen [spoiler]
+
+void DrawSprite(char* textureDict, char* textureName, float x, float y, float scaleX, float scaleY, ColorSet Color, int alpha)
+
+{
+
+REQUEST_STREAMED_TEXTURE_DICT(textureDict, 0);
+
+if (HAS_STREAMED_TEXTURE_DICT_LOADED(textureDict)){
+
+Vec3 textureRes = GET_TEXTURE_RESOLUTION(textureDict, textureName);
+
+DRAW_SPRITE(textureDict, textureName, x, y, scaleX, scaleY, 0.0, Color.r, Color.g, Color.b, alpha);
+
+}
+
+}
+
+}[/spoiler]
+
+Draw Text Items On Screen (Common Areas) [spoiler]
+
+void HudOverlay(const char* text, int position, bool centered)
+
+{
+
+switch (position)
+
+{
+
+// Top Left Corner
+
+case 1:
+
+DrawText(text, 6, 0.02, 0, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Top Center
+
+case 2:
+
+DrawText(text, 6, 0.50, 0, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Top Right Corner
+
+case 3:
+
+DrawText(text, 6, 0.98, 0, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Bottom Left Corner
+
+case 4:
+
+DrawText(text, 6, 0.02, 0.95, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Bottom Center
+
+case 5:
+
+DrawText(text, 6, 0.50, 0.95, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Bottom Right Corner
+
+case 6:
+
+DrawText(text, 6, 0.98, 0.95, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Center Left
+
+case 7:
+
+DrawText(text, 6, 0.02, 0.50, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Center Right
+
+case 8:
+
+DrawText(text, 6, 0.98, 0.50, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break; 
+
+// Center Center
+
+case 9:
+
+DrawText(text, 6, 0.50, 0.50, 0.40, 0.40, Colors::Common::Teal, 255, centered);
+
+break;
+
+}
+
+}[/spoiler]
+
+[/spoiler]
+
+Installing The Menu [spoiler]
+
+There are 2 different compiled Main Menu builds that I usually do, as well as the Recovery build. 
+
+The address offsets are located in "addresses.h". Simply comment out the one that you DO NOT want to use and build. 
+
+Recommended For Most Users: 
+
+iLLiCiT_0x3FA4D8_OLD_1.25_FUNCTION.sprx 
+
+This build uses the original 1.25 CREATE_AMBIENT_PICKUP function at the native address 0x3FA4D8. For this to work properly, you need the patched EBOOT located here: http://www.nextgenupdate.com/forums/gta-5-mods/867188-1-26-script-bypass-launch-fix-sprx-loader-actual-1-26-eboot-bles.html 
+
+Alternate Build: 
+
+iLLiCiT_0x3FA674_ALT_FUNCTION_NEEDS_0x03EA68B_PATCHED.sprx 
+
+This 2nd build uses the original 1.26 CREATE_AMBIENT_PICKUP function at the native address 0x3FA674. For this build to work properly, you must add an additional patch to the EBOOT at address 0x03EA68B. The byte must be changed from "0" to "1" for the function to work. 
+
+To use ANY of the SPRX menus, just rename your chosen SPRX file to " GTA.sprx " if using recommended EBOOT, and place it under " dev_hdd0/tmp/ ".
+
+[/spoiler]
+
+Using The Menu [spoiler]
+
+Open Menu: SQUARE + DPAD LEFT 
+
+Navigate Back: SQUARE 
+
+Select Item: CROSS [/spoiler]
+
+Menu Options (Main Menu) 
+
+[spoiler]
+
+Money Drops [spoiler]
+
+- Lobby Drop
+
+- Player Drop
+
+- Vehicle Drop
+
+- Talking Player Drop
+
+- Button Drop
+
+- Change Drop Prop
+
+- Adjust Drop Coordinates X/Y/Z
+
+- Disable All Money Toggles
+
+[/spoiler] 
+
+Self Mods [spoiler]
+
+Toggles 
+
+- God Mode
+
+- Wanted Level
+
+- Invisibility
+
+- Night Vision
+
+- Explosive Melee
+
+- Fire Feet
+
+- Super Jump
+
+- Super Run
+
+- Mobile Radio 
+
+Weapons 
+
+- Give All Weapons
+
+- Take All Weapons
+
+- Explosive Bullets
+
+- Fire Bullets 
+
+Animations 
+
+- Some animation testing (working) 
+
+Change Name 
+
+- A few preset names to choose 
+
+Change Model 
+
+- A few models to choose 
+
+- Max Health/Armor 
+
+Time Cycle Modifier 
+
+- Shit Ton of Effects 
+
+- Mobile Phone
+
+- Clone Player
+
+- Sky Dive
+
+- Extend Water Time
+
+- Explode (40 Options)
+
+[/spoiler]
+
+Players [spoiler]
+
+- Get Player Info (Gets Model, WIP)
+
+- Check if Modder (Attempt to check modder status)
+
+- Teleport To Player
+
+- Attach To Player
+
+- Detach From Player
+
+Vehicle Options 
+
+- Get Vehicle Info
+
+- Fix & Wash
+
+- Fully Tune
+
+- Hijack
+
+- Force Stop
+
+- Boost Forward
+
+- Boost Backwards
+
+- Flip Vehicle Upright
+
+- Set On Fire
+
+- Freeze
+
+- Slingshot Vehicle
+
+- Explode Tires
+
+- Smash Windows
+
+- Destroy
+
+- Explode (40+ Options)
+
+- Delete
+
+Objects & Props 
+
+- Some Attachment Testing Only Done Here (Working) 
+
+- Give All Weapons
+
+- Take All Weapons
+
+- Clear Props
+
+- Kick Player
+
+- Freeze Player
+
+- Explode (40+ Options)
+
+- Silent Snipe
+
+[/spoiler] 
+
+Lobby [spoiler]
+
+- Show Talking Players
+
+Talking Punishments 
+
+Talking Punishments Loop 
+
+- Teleport Lobby To Me (Not working properly because of Network Entity Control)
+
+- Give All Weapons
+
+- Take All Weapons
+
+- Clone Lobby
+
+- Kick All Players
+
+- Disable All Tasks
+
+- Explode (40+ Options)
+
+- Clear Props
+
+- Freeze All Players (Except You)
+
+[/spoiler] 
+
+World [spoiler]
+
+[/spoiler] 
+
+Teleport [spoiler]
+
+[/spoiler] 
+
+Vehicles [spoiler]
+
+- Spawn Vehicles (All Hashes + Custom + Money Options)
+
+- Delete Last Vehicle 
+
+Mod & Repair Shop 
+
+- Fix & Wash
+
+- Fully Tune 
+
+Change License Plate 
+
+- Choose from several different names 
+
+Colors & Paint 
+
+- Change Primary, Secondary, and Extra Colors 
+
+Tire Smoke Color 
+
+- Change To Common Colors, Random, and Patriot 
+
+Vehicle Manager 
+
+- This sub-menu works partially 
+
+Toggles 
+
+- Boost Button Bind
+
+- Speedometer
+
+- Speedometer: BTTF
+
+- Spawned Car To Phone (works??)
+
+- Hydraulics (Work Mostly)
+
+- Need For Speed
+
+- Flying Car (Works Mostly)
+
+- Hydro Jump
+
+- Air Jump
+
+- GodMode
+
+- Invisibility
+
+- Freeze
+
+- Lights
+
+- Brights
+
+- Light On Fire
+
+- Destroy Vehicle 
+
+Turn Signals 
+
+- Toggle Bind To L1+R1
+
+- Left Blinker On
+
+- Left Blinker Off
+
+- Right Blinker On
+
+- Right Blinker Off
+
+- All Blinkers On
+
+- All Blinkers Off
+
+[/spoiler] 
+
+Objects [spoiler]
+
+- Several Objects To Spawn (Needs Updating)
+
+[/spoiler] 
+
+Peds [spoiler]
+
+[/spoiler] 
+
+Protection [spoiler]
+
+[/spoiler] 
+
+Network [spoiler]
+
+- Skip Online Tutorial
+
+- Set Mission Finished
+
+- Start New Online Session
+
+- Start Solo Single Player
+
+- Override Spectator Mode (Working??)
+
+- Override Network Clock
+
+- Is Cloud Available
+
+[/spoiler] 
+
+Misc [spoiler]
+
+Toggles 
+
+- Radar
+
+- HUD
+
+- Enable Dev Mode (Works??) 
+
+- Skip The Bullshit!
+
+- Skip All Tutorials
+
+- Show Mission Flag
+
+- Launch Single Player Game
+
+- Skip Prologue Hack 1
+
+- Skip Prologue Hack 2
+
+- Skip Prologue Hack 3
+
+- Pause Game
+
+- Show End Credits Screen
+
+[/spoiler] 
+
+Help [spoiler]
+
+[/spoiler]
+
+[/spoiler]
+
+Menu Options (Recovery Menu) 
+
+[spoiler]
+
+- Gimmie The Goods (Godmode, No Cops, Max Armor/Health, Infinite Ammo, All Weapons)
+
+- Increase RP
+
+- Give Network Cash 
+
+Unlockables [spoiler]
+
+- Unlock All Heists
+
+- Unlock Heist Vehicles
+
+- Unlock Heist Trophies
+
+- Unlock Camos & Parachutes
+
+- Unlock Free Chrome Rims
+
+- Unlock Exclusive T-Shirts
+
+- Unlock All Vehicle Mods
+
+- Unlock Trophies & Awards
+
+- Unlock All Hairstyles
+
+- Unlock All Tatoos
+
+[/spoiler]
+
+Give Items [spoiler]
+
+- Give Armor
+
+- Give Fireworks
+
+- Give Snacks
+
+[/spoiler]
+
+- 100% Max Skills
+
+- Purchase All Weapons
+
+- Bypass Vehicle Sell Timer
+
+- Enable Free Shopping
+
+- Clear Mental State
+
+- Clear Reports
+
+- Disable Idle Kick
+
+- Remove Badsport
+
+- Disable 1.26 Anti-Cheat
+
+[/spoiler] 
+
+I will continue to update it myself with features I feel are needed or fun. I may take other forks and merge into the Master Branch if I feel it is suited for the menu. 
+
+To all that bought it....thanks....no refunds....haha!! 
+
+enj0y
